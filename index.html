@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./styles/style.css">
+	<title>Lesson 11</title>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<!-- Current day block -->
+		<div class="current-date">
+			<h3 class="date"></h3>
+			<h1 class="time"></h1>
+		</div>
+		<!-- stopwatch block -->
+		<div class="stopwatch">
+
+			<div class="stopwatchDisplay">
+		<!-- Stopwatch display -->
+				<div class="display" >00:00:00:000</div>
+		<!-- Stopwatch buttons -->
+				<div class="stopwatch-buttons">
+					<input type="button" class='btn' id="stopwatch-start" value="START">
+					<input type="button" class='btn' id="stopwatch-loop" value="LOOP">
+					<input type="button" class='btn' id="stopwatch-stop" value="STOP">
+					<input type="button" class='btn' id="stopwatch-reset" value="RESET">
+				</div>
+
+			</div>
+		<!-- Stopwatch laps (loops) -->
+			<ol class="loops"></ol>
+		</div>
+
+		<!-- Timer block -->
+		<div class="timer">
+		<!-- Timer time set up -->
+			<div class="timer-count">
+				<div class="timer-time time ">
+					<!-- <input type="text" class="timer-minutes timer-input" max="60" min="0" value="5">:<input type="text" class="timer-seconds timer-input" max="60" min="00" value="15"> -->
+					<span class="timer-minutes">25</span>
+				</div>
+				<div class="count-property">MINUTES</div>
+		<!-- Timer time set up Buttons-->
+				<div class="timer-buttons">
+					<input type="button" class="timer-btn" id="timer-btn-plus" value="+">
+					<input type="button" class="timer-btn" id="timer-btn-minus" value="−" >
+				</div>
+			</div>
+		<!-- Timer count display -->
+			<div class="count-display">
+				<div class="count-time time">
+					<span class="count-minutes">0</span>:
+					<span class="count-seconds">0</span>
+				</div>
+		<!-- Timer count display buttons-->
+				<div class="count-buttons">
+					<input type="button" class='btn count-btn' id="timer-start" value="START">
+					<input type="button" class='btn count-btn' id="timer-stop" value="STOP">
+					<input type="button" class='btn count-btn' id="timer-reset" value="REST">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="./script/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+@font-face {
+	font-family: digital;
+	src: url('../font/DIGITALDREAMSKEWNARROW.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(22 7 49);
+	color: rgb(32 97 135);
+	font-family: digital;
+}
+
+li {
+	font-size: 30px;
+	margin: 9px 0;
+}
+
+/* Start of Current Date beautifying */
+.current-date,
+.stopwatch,
+.timer {
+	height: 200px;
+	width: 80%;
+	border: 3px solid rgb(163, 159, 159);
+	border-radius: 20px;
+	margin: 15px auto;
+	text-align: center;
+}
+
+.current-date {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.date {
+	font-size: 25px;
+}
+
+.time {
+	margin-top: 15px;
+	font-size: 90px;
+}
+
+/* End of Current Date beautifying */
+
+
+/* Start of Stopwatch beautifying */
+.stopwatch {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.loops {
+	height: 170px;
+	width: 400px;
+	border: 3px solid rgb(163, 159, 159);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.display {
+	font-size: 45px;
+}
+
+.stopwatch-buttons {
+	margin-top: 30px;
+}
+
+.btn {
+	height: 30px;
+	width: 60px;
+	border: 2px solid rgb(163, 159, 159);
+	/* border: 2px solid rgb(32 97 135); */
+	border-radius: 5px;
+	color: rgb(32 97 135);
+	background-color: rgb(22 7 49);
+}
+
+.btn:hover {
+	border: 2px solid  rgb(32 97 135);
+	color: rgb(163, 159, 159);
+}
+
+/* End of Stopwatch beautifying */
+
+
+/* Start of timer beautifying */
+.timer{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.time{
+	font-size: 50px;
+	/* margin-bottom: 20px; */
+}
+.count-property{
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.timer-btn{
+	height: 30px;
+	width: 30px;
+	border: 2px solid rgb(163, 159, 159);
+	border-radius: 5px;
+	color: rgb(32 97 135);
+	background-color: rgb(22 7 49);
+	margin-top: 20px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.timer-btn:hover{
+	border: 2px solid  rgb(32 97 135);
+	color: rgb(163, 159, 159);
+}
+.count-btn{
+	margin-top: 42px;
+}
+/* End of timer beautifying */
